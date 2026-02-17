@@ -1,1 +1,94 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f0f7f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  background-color: #a8d5ba;
+  padding: 40px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Catálogo */
+.catalogo {
+  padding: 20px;
+  text-align: center;
+}
+
+.plantas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.planta {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.planta img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.planta h3 {
+  margin-bottom: 5px;
+}
+
+.planta button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.planta button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
 
