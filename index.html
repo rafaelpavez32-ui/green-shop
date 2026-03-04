@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GreenShop - Tienda online de plantas">
+  <title>GreenShop - Venta de Plantas Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header role="banner">
+    <div class="container">
+      <h1 class="logo">GreenShop</h1>
+      
+      <nav role="navigation" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      
+      <button class="carrito-btn" id="boton-carrito" aria-label="Abrir carrito">
+        Carrito <span id="carrito-count">0</span>
+      </button>
+
+      <div id="carrito-panel" class="carrito-oculto">
+        <h3>Tu Carrito</h3>
+        <ul id="lista-carrito">
+          </ul>
+        <p>Total: <span id="total-precio">0</span>€</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner" id="inicio">
+    <h2>¡Las mejores plantas para tu hogar!</h2>
+    <p>Compra plantas online de calidad con envío rápido</p>
+    <a href="#catalogo" class="cta-button">Explorar Catálogo</a>
+  </section>
+
+  <section class="catalogo" id="catalogo">
+    <div class="container">
+      <h2>Nuestras Plantas</h2>
+      
+      <div class="filtros" id="contenedor-filtros">
+        <button class="filtro-btn active" data-categoria="todas">Todas</button>
+        <button class="filtro-btn" data-categoria="suculentas">Suculentas</button>
+        <button class="filtro-btn" data-categoria="flores">Flores</button>
+        <button class="filtro-btn" data-categoria="interior">Interior</button>
+      </div>
+
+      <div class="plantas" id="contenedor-plantas">
+        
+        <article class="planta" data-categoria="interior">
+          <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?w=250&h=250&fit=crop" alt="Pothos">
+          <div class="planta-info">
+            <h3>Pothos</h3>
+            <p class="descripcion">Planta trepadora para principiantes</p>
+            <p class="precio">10€</p>
+            <button class="btn-carrito" data-id="1" data-nombre="Pothos" data-precio="10">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="planta" data-categoria="suculentas">
+          <img src="https://images.unsplash.com/photo-1509423303974-b195e32434ae?w=250&h=250&fit=crop" alt="Aloe Vera">
+          <div class="planta-info">
+            <h3>Aloe Vera</h3>
+            <p class="descripcion">Resistente y medicinal</p>
+            <p class="precio">15€</p>
+            <button class="btn-carrito" data-id="2" data-nombre="Aloe Vera" data-precio="15">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="planta" data-categoria="flores">
+          <img src="https://images.unsplash.com/photo-1562184760-a11b3cf7c169?w=250&h=250&fit=crop" alt="Rosa">
+          <div class="planta-info">
+            <h3>Rosa Decorativa</h3>
+            <p class="descripcion">Flores frescas y duraderas</p>
+            <p class="precio">12€</p>
+            <button class="btn-carrito" data-id="3" data-nombre="Rosa" data-precio="12">Añadir al carrito</button>
+          </div>
+        </article>
+
+        <article class="planta" data-categoria="interior">
+          <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=250&h=250&fit=crop" alt="Monstera">
+          <div class="planta-info">
+            <h3>Monstera</h3>
+            <p class="descripcion">Planta de hojas hermosas</p>
+            <p class="precio">25€</p>
+            <button class="btn-carrito" data-id="4" data-nombre="Monstera" data-precio="25">Añadir al carrito</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form class="contacto-form" id="formulario-contacto">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required minlength="3">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <p class="copyright">&copy; 2026 GreenShop. Proyecto Final DAW.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
